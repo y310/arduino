@@ -35,6 +35,7 @@ class Arduino
     
     # Set output pins. This is a must.
     def output(*pinList)
+        @serial.write '5'
         sendData(pinList.length)
         if pinList.class==Array
             @outputPins = pinList

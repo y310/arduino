@@ -4,13 +4,11 @@ int cmd = 0;
 // command arguments
 int cmd_arg[2];
 
-int serialStatus = 0;
+int serialStatus = 1;
 
 void setup() {
   // connect to the serial port
   Serial.begin(115200);
-  setupPins();
-  serialStatus = 1;
 }
 
 void loop()
